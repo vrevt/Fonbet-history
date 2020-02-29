@@ -1,0 +1,43 @@
+{
+    "name": "Fonbet history",
+    "description": "This extension can download Fonbet history",
+    "version": "1.1.1",
+    "manifest_version": 2,
+
+    "permissions": [
+        "declarativeContent",
+        "storage",
+        "http://*/",
+        "https://*/",
+        "tabs",
+        "activeTab"
+    ],
+
+    "background":{
+        "scripts": ["background.js"],
+        "persistent": true 
+    },
+
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+
+    "icons": { 
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png" 
+    },
+
+    "content_scripts": [
+    {
+      "matches": [
+         "<all_urls>" 
+      ],
+      "js": [ 
+        "popup.js" 
+      ],
+      "run_at": "document_end"
+    }]
+}
