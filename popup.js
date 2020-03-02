@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
 					return;
 				}
 			} else {
-				alert("wrong page");
+				alert("wrong page, Please, open History page");
 				return;
 			}
 			let column = [];
