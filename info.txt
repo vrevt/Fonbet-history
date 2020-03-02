@@ -1,6 +1,0 @@
-
-bets-list__data == all table 
-column lolumn-1..7 == usefull information
-
-
-https://stackoverflow.com/questions/7641099/chrome-extension-grab-dom-content-for-parsing
